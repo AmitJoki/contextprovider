@@ -52,4 +52,4 @@ bar() {
 
 # Example
 
-[https://github.com/AmitJoki/contextprovider/blob/69a818ccd7486c126a259d8bdfa3d58897090bf4/example_test.go](https://github.com/AmitJoki/contextprovider/blob/49988f9c463a417d61729bd76a90b0ffde273764/example_test.go#L1-L44)
+https://github.com/AmitJoki/contextprovider/blob/49988f9c463a417d61729bd76a90b0ffde273764/example_test.go#L1-L44
