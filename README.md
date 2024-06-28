@@ -6,13 +6,13 @@ It also enables localized and type-safe value passing ensuring access only to th
 
 ## Motivation
 
-I am learning Go and I came across this [blog post](https://faiface.github.io/post/context-should-go-away-go2/).
+While learning Go, I came across this [blog post](https://faiface.github.io/post/context-should-go-away-go2/).
 
 1. Contexts are pervasive and require changes to function signature.
 2. Functions that do not care about a context still has to change its signature just so it can drill that context down another level.
 3. There's boilerplate involved in getting type-safe data back.
 
-I prefer learning by doing and thought to myself if the above pain points can be solved by a package and thus contextprovider was born. This is purely academic and may look like magic because it is. It uses `reflect` and `runtime` packages under the hood which adds a performance overhead. I do not have any production grade experience in writing Go so use the package at your own risk.
+I prefer learning by doing and wondered if the above pain points can be solved by a package and thus contextprovider was born. This is purely academic and may look like magic because it is. It uses `reflect` and `runtime` packages under the hood which adds a performance overhead. I do not have any production grade experience in writing Go so use the package at your own risk.
 
 ## Provider and Receiver
 
@@ -52,4 +52,4 @@ bar() {
 
 # Example
 
-https://github.com/AmitJoki/contextprovider/blob/69a818ccd7486c126a259d8bdfa3d58897090bf4/example_test.go
+[https://github.com/AmitJoki/contextprovider/blob/69a818ccd7486c126a259d8bdfa3d58897090bf4/example_test.go](https://github.com/AmitJoki/contextprovider/blob/49988f9c463a417d61729bd76a90b0ffde273764/example_test.go#L1-#L44)
