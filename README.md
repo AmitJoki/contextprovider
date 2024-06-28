@@ -14,8 +14,6 @@ I am learning Go and I came across this [blog post](https://faiface.github.io/po
 
 I prefer learning by doing and thought to myself if the above pain points can be solved by a package and thus contextprovider was born. This is purely academic and may look like magic because it is. It uses `reflect` and `runtime` packages under the hood which adds a performance overhead. I do not have any production grade experience in writing Go so use the package at your own risk.
 
-# Concepts
-
 ## Provider and Receiver
 
 Provider provides the context. Assume there are 2 functions `foo()`, `bar()`. `foo` is a provider which provides the context that is needed by `bar`.
@@ -51,3 +49,7 @@ bar() {
   fmt.Printf("%T %v", val, val) // int64 42
 }
 ```
+
+# Example
+
+https://github.com/AmitJoki/contextprovider/blob/69a818ccd7486c126a259d8bdfa3d58897090bf4/example_test.go
